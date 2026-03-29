@@ -15,58 +15,54 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Co-Founder</h4>
-                <h5>CallHQ.ai</h5>
+                <h4>Open Source Contributor</h4>
+                <h5>C2SI & CircuitVerse</h5>
               </div>
               <h3>NOW</h3>
             </div>
             <p>
-              Building CallHQ.ai, a voice AI platform for
-              automating customer calls, support, and conversions.
+              Contributing to GDB-GUI (C2SI) and CircuitVerse. Building UI components,
+              mentor-led code reviews, and working on web-based simulators used globally.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Adobe</h4>
-                <h5>6+ years · Noida</h5>
+                <h4>React.js Intern</h4>
+                <h5>Locobuzz Solutions · Mumbai</h5>
               </div>
-              <h3>2017–24</h3>
+              <h3>2025–26</h3>
             </div>
             <p>
-              Senior Lead Software Engineer (Feb 2024 – May 2024). Lead Software
-              Engineer (Feb 2021 – Feb 2024). Software Engineer II (Dec 2017 –
-              Feb 2021): internationalization, globalization, and localization for
-              Adobe Technical Communication Suite; functional and linguistic testing
-              strategy; in-house tooling; collaboration with product and engineering
-              for high-quality localized releases.
+              Developed React UI components for enterprise social media analytics dashboards.
+              Integrated REST APIs for high-volume datasets across full SDLC. Received
+              Letter of Recommendation from CTO.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Consultant</h4>
-                <h5>Genpact Headstrong </h5>
+                <h4>Google Student Ambassador</h4>
+                <h5>Google India · President</h5>
               </div>
-              <h3>2016–17</h3>
+              <h3>2024–25</h3>
             </div>
             <p>
-              Sep 2016 – Nov 2017. Developed and maintained WCF services consumed
-              by the UI; deployment support across environments; NUnit tests and
-              coverage; bug fixes from QA and users; database work.
+              Founded and led a 50+ member student developer community. Organized
+              workshops and hackathons to foster a culture of product engineering.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Sf Engineer</h4>
-                <h5>Infogain</h5>
+                <h4>Software Product Engineering</h4>
+                <h5>Kalvium @ MIT ADT University</h5>
               </div>
-              <h3>2013-16</h3>
+              <h3>2024–28</h3>
             </div>
             <p>
-              Software engineering across enterprise projects, contributing to
-              design, development, and delivery of business applications.
+              Pursuing B.Tech in Computer Science, focusing on hands-on software
+              development, system architecture, and product ownership.
             </p>
           </div>
         </div>

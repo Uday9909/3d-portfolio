@@ -5,32 +5,25 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "CallHQ",
-    category: "Voice AI Calling Platform",
-    tools: "Voice AI, Calling Automation, CRM Integrations",
-    image: "/images/callhq.png",
-    link: "https://callhq.ai",
+    title: "Sentinel AI",
+    category: "Observability & Anomaly Detection",
+    tools: "Go, Python, React.js, Kafka, Elasticsearch, LLM, Docker",
+    image: "/images/sentinel.png",
+    link: "https://github.com/Uday9909/Sentinel-Ai",
   },
   {
-    title: "Whatsapp Automation",
-    category: "WABA Application",
-    tools: "WhatsApp Business API, Workflow Automation, Notifications",
-    image: "/images/whatsapp.png",
-    link: "https://whatsapp.callhq.ai",
+    title: "Hostel 360",
+    category: "AI-Powered Hostel Management",
+    tools: "Flutter, Firebase, Dart, DALL-E, Firestore",
+    image: "/images/hostel360.png",
+    link: "https://github.com/kalviumcommunity/S72-Feb2026-DALL_E-FlutterFirebase-Hostel360",
   },
   {
-    title: "Broki",
-    category: "Real Estate Platform for FnB Industry",
-    tools: "Property Discovery, Lead Management, Marketplace Workflows",
-    image: "/images/broki.png",
-    link: "https://broki.in",
-  },
-  {
-    title: "Orrdr.com",
-    category: "Ecommerce Platform and Mobile App",
-    tools: "Ecommerce, Mobile Experience, Order Management",
-    image: "/images/orrdr.png",
-    link: "https://orrdr.com",
+    title: "Sentience",
+    category: "AI-Driven Productivity Platform",
+    tools: "React.js, Node.js, MongoDB, JWT",
+    image: "/images/sentience.png",
+    link: "https://github.com/kalviumcommunity/Sentience",
   },
 ];
 

@@ -42,6 +42,14 @@ const setCharacter = (
                     const newMat = (mesh.material as THREE.Material).clone() as THREE.MeshStandardMaterial;
                     newMat.color = new THREE.Color("#000000");
                     mesh.material = newMat;
+                  } else if (mesh.name === "Shoe" || mesh.name === "Sole") {
+                    const newMat = (mesh.material as THREE.Material).clone() as THREE.MeshStandardMaterial;
+                    newMat.color = new THREE.Color("#FF0000"); // Red shoes
+                    mesh.material = newMat;
+                  } else if (mesh.name === "CAP001" || mesh.name === "CAP002") {
+                    const newMat = (mesh.material as THREE.Material).clone() as THREE.MeshStandardMaterial;
+                    newMat.color = new THREE.Color("#F5F5DC"); // Beige cap
+                    mesh.material = newMat;
                   }
                 }
 
