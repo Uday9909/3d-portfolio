@@ -90,8 +90,7 @@ const WhatIDo = () => {
               <h3>WEB & MOBILE DEVELOPMENT</h3>
               <h4>Building Scalable & Interactive Apps</h4>
               <p>
-                Shipping production-grade systems using React and Flutter. I build
-                responsive dashboards, cross-platform mobile apps, and UI components.
+                Building responsive web and mobile apps with React and Flutter, focused on scalable UI.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
@@ -100,7 +99,6 @@ const WhatIDo = () => {
                 <div className="what-tags">Flutter</div>
                 <div className="what-tags">Dart</div>
                 <div className="what-tags">TypeScript</div>
-                <div className="what-tags">Tailwind CSS</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -124,11 +122,10 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>BACKEND & SYSTEMS</h3>
+              <h3>FULL STACK & SYSTEMS</h3>
               <h4>Architecting Robust APIs & Pipelines</h4>
               <p>
-                I design and implement Go/Node.js APIs, Kafka streaming pipelines,
-                and microservices—focused on high-volume data and performance.
+                Designing high-performance Go/Node.js APIs and data pipelines for scalable systems.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
@@ -136,8 +133,7 @@ const WhatIDo = () => {
                 <div className="what-tags">Node.js</div>
                 <div className="what-tags">Python</div>
                 <div className="what-tags">Kafka</div>
-                <div className="what-tags">Elasticsearch</div>
-                <div className="what-tags">PostgreSQL</div>
+
                 <div className="what-tags">Docker</div>
               </div>
               <div className="what-arrow"></div>

@@ -31,24 +31,38 @@ const setCharacter = (
             character.traverse((child: any) => {
               if (child.isMesh) {
                 const mesh = child as THREE.Mesh;
+                const mat = mesh.material as THREE.MeshStandardMaterial;
+                const meshName = mesh.name.toLowerCase();
+                
+                // Debugging
+                console.log(`Mesh: ${meshName}, Color: ${mat.color?.getHex().toString(16)}`);
 
-                // Change clothing colors to match site theme
                 if (mesh.material) {
-                  if (mesh.name === "BODY.SHIRT") { // The shirt mesh
-                    const newMat = (mesh.material as THREE.Material).clone() as THREE.MeshStandardMaterial;
-                    newMat.color = new THREE.Color("#8B4513");
+                  const color = mat.color;
+                  
+                  // Target Shirt: Match by name OR by the original brown color
+                  const isOriginalBrown = color && color.r > 0.4 && color.r < 0.7 && color.g > 0.2 && color.g < 0.4;
+                  if (meshName.includes("shirt") || meshName.includes("neck") || meshName.includes("body") || isOriginalBrown) { 
+                    const newMat = mat.clone();
+                    newMat.color = new THREE.Color("#FFFFFF"); // White 
+                    newMat.map = null; 
                     mesh.material = newMat;
-                  } else if (mesh.name === "Pant") {
-                    const newMat = (mesh.material as THREE.Material).clone() as THREE.MeshStandardMaterial;
-                    newMat.color = new THREE.Color("#000000");
+                  } 
+                  // Target Pant: Match by name
+                  else if (meshName.includes("pant")) {
+                    const newMat = mat.clone();
+                    newMat.color = new THREE.Color("#000000"); // Black
+                    newMat.map = null;
                     mesh.material = newMat;
-                  } else if (mesh.name === "Shoe" || mesh.name === "Sole") {
-                    const newMat = (mesh.material as THREE.Material).clone() as THREE.MeshStandardMaterial;
+                  } 
+                  // Other components
+                  else if (meshName.includes("shoe") || meshName.includes("sole")) {
+                    const newMat = mat.clone();
                     newMat.color = new THREE.Color("#FF0000"); // Red shoes
                     mesh.material = newMat;
-                  } else if (mesh.name === "CAP001" || mesh.name === "CAP002") {
-                    const newMat = (mesh.material as THREE.Material).clone() as THREE.MeshStandardMaterial;
-                    newMat.color = new THREE.Color("#F5F5DC"); // Beige cap
+                  } else if (meshName.includes("cap")) {
+                    const newMat = mat.clone();
+                    newMat.color = new THREE.Color("#000000"); // Black cap
                     mesh.material = newMat;
                   }
                 }
